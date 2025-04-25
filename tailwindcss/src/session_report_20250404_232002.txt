@@ -1,0 +1,61 @@
+E-Proctoring Session Report
+Session Start Time: 2025-04-04 23:19:46.247622
+Session End Time: 2025-04-04 23:20:02.800582
+Total Duration: 0:00:16.552960
+Total Suspicious Events: 53
+Suspicion Graph: suspicion_graph_20250404_232002.png
+
+Suspicious Activity Log:
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:47: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:48: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:49: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:50: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected
+2025-04-04 23:19:51: Suspicious Activity Detected

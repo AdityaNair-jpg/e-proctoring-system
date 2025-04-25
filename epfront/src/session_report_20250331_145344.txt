@@ -1,0 +1,67 @@
+E-Proctoring Session Report
+Session Start Time: 2025-03-31 14:53:25.616691
+Session End Time: 2025-03-31 14:53:44.021805
+Total Duration: 0:00:18.405114
+Total Suspicious Events: 59
+Suspicion Graph: suspicion_graph_20250331_145344.png
+
+Suspicious Activity Log:
+2025-03-31 14:53:39: Suspicious Activity Detected
+2025-03-31 14:53:39: Suspicious Activity Detected
+2025-03-31 14:53:39: Suspicious Activity Detected
+2025-03-31 14:53:39: Suspicious Activity Detected
+2025-03-31 14:53:39: Suspicious Activity Detected
+2025-03-31 14:53:39: Suspicious Activity Detected
+2025-03-31 14:53:39: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:40: Suspicious Activity Detected
+2025-03-31 14:53:41: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:42: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
+2025-03-31 14:53:43: Suspicious Activity Detected
