@@ -113,15 +113,16 @@ const TopMenu = () => {
         <div className="container mx-auto flex justify-between items-center py-4 px-6">
           <h1 className="text-2xl font-bold text-gray-800">Invigilease</h1>
           <div className="flex space-x-8 text-lg text-gray-600 font-medium">
-            <Link to="/history" className="ellipse-hover cursor-pointer jello-horizontal">
-              <p className="text-blue-800 hover:text-gray-900">History</p>
-            </Link>
-            <Link to="/add-test" className="ellipse-hover cursor-pointer jello-horizontal">
-              <p className="text-blue-800 hover:text-gray-900">Add Test</p>
-            </Link>
-            <Link to="/" className="ellipse-hover cursor-pointer jello-horizontal hover:text-red-600">
-              <p className='text-blue-800  hover:text-red-600'>Logout</p>
-            </Link>
+          <Link to="/dashboard/history" className="ellipse-hover cursor-pointer jello-horizontal">
+  <p className="text-blue-800 hover:text-gray-900">History</p>
+</Link>
+<Link to="/dashboard/add-test" className="ellipse-hover cursor-pointer jello-horizontal">
+  <p className="text-blue-800 hover:text-gray-900">Add Test</p>
+</Link>
+<Link to="/logout" className="ellipse-hover cursor-pointer jello-horizontal hover:text-red-600">
+  <p className="text-blue-800 hover:text-red-600">Logout</p>
+</Link>
+
           </div>
         </div>
       </nav>

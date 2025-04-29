@@ -6,11 +6,14 @@ import subprocess
 from sqlalchemy import text
 from models import db, Test
 from flask import send_from_directory
+from flask_jwt_extended import JWTManager, create_access_token, jwt_required, get_jwt_identity
+from werkzeug.security import generate_password_hash, check_password_hash
 import os
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for communication with React frontend
-
+app.config['JWT_SECRET_KEY'] = 'super-secret-key'  # You can change this to something stronger
+jwt = JWTManager(app)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:hello123@localhost:3308/proctoring_db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -106,6 +109,7 @@ def get_tests():
     except Exception as e:
         print(f"Error fetching tests: {e}")
         return jsonify({'error': 'Failed to fetch tests'}), 500
+    
 @app.route('/save_report', methods=['POST'])
 def save_report():
     data = request.json
@@ -162,6 +166,60 @@ def download_report(filename):
         return {"error": "File not found"}, 404
 
     return send_from_directory(reports_dir, filename, as_attachment=True, mimetype='application/pdf')
+
+@app.route('/register', methods=['POST'])
+def register():
+    data = request.get_json()
+    username = data.get('username')
+    email = data.get('email')
+    password = data.get('password')
+
+    if not username or not email or not password:
+        return jsonify({'error': 'Missing data'}), 400
+
+    existing_user = db.session.execute(
+        text("SELECT * FROM users WHERE email = :email"),
+        {"email": email}
+    ).fetchone()
+
+    if existing_user:
+        return jsonify({'error': 'User already exists'}), 400
+
+    hashed_password = generate_password_hash(password)
+
+    db.session.execute(
+        text("INSERT INTO users (username, email, password) VALUES (:username, :email, :password)"),
+        {"username": username, "email": email, "password": hashed_password}
+    )
+    db.session.commit()
+
+    return jsonify({'message': 'User registered successfully'}), 200
+
+@app.route('/login', methods=['POST'])
+def login():
+    data = request.get_json()
+    email = data.get('email')
+    password = data.get('password')
+
+    if not email or not password:
+        return jsonify({'error': 'Missing data'}), 400
+
+    user = db.session.execute(
+        text("SELECT * FROM users WHERE email = :email"),
+        {"email": email}
+    ).fetchone()
+
+    if not user:
+        return jsonify({'error': 'User not found'}), 404
+
+    stored_password = user[3]  # (0=id, 1=username, 2=email, 3=password)
+
+    if not check_password_hash(stored_password, password):
+        return jsonify({'error': 'Incorrect password'}), 401
+
+    access_token = create_access_token(identity=email)
+    return jsonify({'token': access_token}), 200
+
 
 # ======= MAIN =======
 if __name__ == '__main__':

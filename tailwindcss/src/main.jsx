@@ -7,11 +7,25 @@ import TopMenu from './topmenu.jsx';
 import AddTest from './addtest.jsx';
 import TestList from './TestList.jsx';
 import HistoryTab from './HistoryTab';
+import Login from './Login.jsx';
+import Register from './Register.jsx';
+import LandingPage from './LandingPage.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
-      <TopMenu />
+      <Routes>
+        <Route path="/" element={<LandingPage />} /> 
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        
+        {/* Nested route for dashboard */}
+        <Route path="/dashboard" element={<TopMenu />}>
+          <Route path="add-test" element={<AddTest />} />
+          <Route path="history" element={<HistoryTab />} />
+          <Route path="test-list" element={<TestList />} />
+        </Route>
+      </Routes>
     </Router>
   </StrictMode>
 );

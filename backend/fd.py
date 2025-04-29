@@ -28,7 +28,7 @@ look_away_counter = 0
 suspicious_events = []
 session_start_time = datetime.datetime.now()
 
-suspicion_levels = deque(maxlen=100)
+suspicion_levels = deque(maxlen=100) 
 time_stamps = deque(maxlen=100)
 start_time = time.time()
 
@@ -41,17 +41,17 @@ ax.set_xlabel('Time (s)')
 ax.set_ylabel('Suspicion Level')
 ax.legend()
 
-def update_plot(frame):
+def update_plot(frame):  #blank plot every 0.5s
     ax.set_xlim(max(0, time.time() - start_time - 60), time.time() - start_time)
     line.set_data(time_stamps, suspicion_levels)
     return line,
 
-ani = animation.FuncAnimation(fig, update_plot, interval=500)
-plt.ion()
+ani = animation.FuncAnimation(fig, update_plot, interval=500) 
+plt.ion()  #interactive mode en
 plt.show()
 
-with mp_face_mesh.FaceMesh(max_num_faces=1, refine_landmarks=True,
-                           min_detection_confidence=0.5,
+with mp_face_mesh.FaceMesh(max_num_faces=1, refine_landmarks=True,  #face detection and tracking loop mp
+                           min_detection_confidence=0.5, 
                            min_tracking_confidence=0.5) as face_mesh:
     while cap.isOpened():
         ret, frame = cap.read()
@@ -63,11 +63,9 @@ with mp_face_mesh.FaceMesh(max_num_faces=1, refine_landmarks=True,
         rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = face_mesh.process(rgb_frame)
 
-        if results.multi_face_landmarks:
+        if results.multi_face_landmarks:                              #gets landmarks
             for face_landmarks in results.multi_face_landmarks:
-                mp_drawing.draw_landmarks(
-                    frame, face_landmarks, mp_face_mesh.FACEMESH_TESSELATION,
-                    mp_drawing.DrawingSpec(color=(0, 255, 0), thickness=0, circle_radius=1))
+                
 
                 h, w, _ = frame.shape
                 left_eye = face_landmarks.landmark[LEFT_EYE[0]]
@@ -141,11 +139,11 @@ pdf.ln(10)
 
 # Classify suspicion level
 total_events = len(suspicious_events)
-if total_events <= 100:
+if total_events <= 50:
     level = "Extremely Low Suspicion"
-elif 100 < total_events <= 300:
+elif 50 < total_events <= 100:
     level = "Medium Suspicion"
-elif 300 < total_events <= 500:
+elif 100 < total_events <= 150:
     level = "High Suspicion"
 else:
     level = "Very High Suspicion"
