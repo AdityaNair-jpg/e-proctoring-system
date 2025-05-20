@@ -15,10 +15,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
       <Routes>
-        
-        
-        {/* Nested route for dashboard */}
-        <Route path="/dashboard" element={<TopMenu />}>
+        <Route path="/" element={<TopMenu />}>
           <Route path="add-test" element={<AddTest />} />
           <Route path="history" element={<HistoryTab />} />
           <Route path="test-list" element={<TestList />} />
