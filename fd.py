@@ -16,7 +16,7 @@ LEFT_EYE = [33, 133]
 RIGHT_EYE = [362, 263]
 
 # Suspicious Activity Threshold
-LOOK_AWAY_THRESHOLD = 3  # Number of consecutive frames
+LOOK_AWAY_THRESHOLD = 3  
 
 # Initialize Video Capture
 cap = cv2.VideoCapture(0)
